@@ -3,7 +3,7 @@
 <head data-theme="light">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo | Login</title>
+    <title>Payoo | Home</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
     <!-- tailwind and daisy link -->
@@ -26,28 +26,18 @@
 
 </head>
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <div class="logo w-[200px] mx-auto pt-32">
-        <img src="./assets/Logo-full.png" alt="">
-    </div>
-    <!-- form -->
-    <div class="form pt-12">
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-xs mx-auto rounded-2xl">
-            <div class="card-body">
-                <fieldset class="fieldset">
-                <label class="label text-neutral font-bold">Mobile Number</label>
-                <input id="input-number" maxlength="11" minlength="11"  type="tel" class="input rounded-full bg-base-200 " value="01234567890" placeholder="Enter your 11 digit Number " />
-
-                <br>
-
-                <label class="label text-neutral font-bold">4 Digit Pin</label>
-                <input id="input-pin" minlength="4" maxlength="4" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 digit Pin" />
-                
-                <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
-                </fieldset>
+    <header class="border-b-2 border-gray-300">
+        <section class="w-11/12 mx-auto p-3 flex justify-between items-center">
+            <div class="left-header">
+                <!-- logo -->
+                 <div class="logo w-[60px]">
+                    <img src="./assets/logo.png" alt="">
+                 </div>
             </div>
-        </div>
-      </div>
-
-      <script src="./script/login.js"></script>
+            <div class="header-right">
+                <a href="/index.html" class="btn btn-soft"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
