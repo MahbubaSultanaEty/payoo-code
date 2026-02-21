@@ -21,7 +21,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
         //assign() নতুন page এ নিয়ে যায় but browser history তে current page টা রেখে দেয় .user Back button চাপলে আগের page এ ফিরে আসতে পারে
         
         // window.location.replace("/home.html")
-        window.location.assign("/home.html")
+        Window.location.assign = "home.html";
 
     } else {
         // 3-1 false::: alert> return

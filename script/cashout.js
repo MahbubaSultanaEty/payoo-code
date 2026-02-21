@@ -16,12 +16,11 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     console.log(cashoutPin);
 
     // 3: get the current balance, validate, convert to number
-    const balanceElement = document.getElementById("balance");
-    const balance = balanceElement.innerText;
+    const balance = getBalance();
     console.log(balance);
 
     // 4: calculate new balance
-    const newBalance = Number(balance) - Number(cashoutAmount);
+    const newBalance = balance - Number(cashoutAmount);
     console.log(newBalance)
     if (newBalance < 0) {
         alert("Invalid Amount");
@@ -31,7 +30,7 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     // 5: Get the pin and verify
     if (cashoutPin == "1234") {
         alert("cashout successful");
-        balanceElement.innerText = newBalance;
+        setBalance(newBalance)
     } else {
         // 5-2 : False::: show an error> return 
         alert("Invalid pin");
